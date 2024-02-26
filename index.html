@@ -5,127 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
 </head>
 <body>
-    <section class="main">
-        <div class="maco">
-            <h2>Welcome To</h2>
-            <h1>  Coffee Shop</h1>
-            <div class="tedi">Enjoy Coffee With Us</div>
-            <button style=" width: 80px; 
-            height:29px ;margin-left: 400px; position: relative; bottom: 31px; font-weight: bold;
-            background-color: rgb(221, 178, 58); border: none; border-radius: 16px; ">Try Now</button>
+    <section class="calculator">
+        <div class="input_field">
+            <input type="text" id="ep">
         </div>
-        <nav>
-            <ul>
-                <li><a href="#h">Home</a></li>
-                <li><a href="#s">Services</a></li>
-                <li><a href="#m">Menu</a></li>
-                <li><a href="#a">About</a></li>
-                <li><a href="#c">Contact</a></li>
-            </ul>
-        </nav>
-    </section>
-    <section class="morein">
-        <div id="mi">     
-            <h4 style="width: 500px;">WHERE EVERY SIP IS JOURNEY TO TRANQUILITY</h4>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
-                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
-                laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
-                voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
-                non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                <button style=" width: 100px; 
-            height:29px ;margin-left: 536px; position: relative; bottom: 31px; font-weight: bold;
-            background-color: rgb(221, 178, 58); border: none; border-radius: 16px; ">Know More</button>
-        </div>   
-    </section>
-    <section class="mu">
-        <div id="mutr">
-            <div id="menuit">
-                <button type="menu">Coffee</button>
-                <button type="menu">Iced Tea</button>
-                <button type="menu">Pizza</button>
-                <button type="menu">Sandwich</button>
+        <div class="buttons_operation">
+            <div class="one">
+                <ul>
+                    <li><button type="button" onclick="ep.value=''">AC</button></li>
+                    <li><button type="button" onclick="ep.value=ep.value.toString().slice(0,-1)">DE</button></li>
+                    <li><button type="button" onclick="ep.value +='%'">%</button></li>
+                    <li><button type="button" onclick="ep.value +='/'">/</button></li>
+                </ul>
             </div>
-            <div id="it">
-                <div id="itco">
-                    <img src="cp.jpg">
-                    <h6>Cappuccino</h6>
-                    <br>
-                    <p>$6.00</p>
-                </div>
-                <div id="itco">
-                    <img src="lt.jpg">
-                    <h6>Latte</h6>
-                    <br>
-                    <p>$6.00</p>
-                </div>
-                <div id="itco">
-                    <img src="lb.jpg">
-                    <h6>Long Black</h6>
-                    <br>
-                    <p>$6.00</p>
-                </div>
-                <div id="itco">
-                    <img src="ac.jpg">
-                    <h6>Americano</h6>
-                    <br>
-                    <p>$6.00</p>
-                </div>
+            <div class="second">
+                <ul>
+                    <li><button type="button" onclick="ep.value +='7'">7</button></li>
+                    <li><button type="button" onclick="ep.value +='8'">8</button></li>
+                    <li><button type="button" onclick="ep.value +='9'">9</button></li>
+                    <li><button type="button" onclick="ep.value +='*'">*</button></li>
+                </ul>
             </div>
-        </div>
-    </section>
-    <section class="ab">
-        <div class="abde">
-            <h4>Taste of Our Coffee</h4>
-            <div class="abdi">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                     incididunt ut labore et dolore magna aliqua. Donec massa
-                      sapien faucibus et molestie ac feugiat sed lectus. Rhoncus dolor purus non 
-                      enim praesent elementum. Arcu non odio euismod lacinia at quis risus sed vulputate. 
-                      Ac odio tempor orci dapibus ultrices in. Id venenatis a condimentum vitae sapien.</p>
+            <div class="third">
+                <ul>
+                    <li><button type="button" onclick="ep.value +='4'">4</button></li>
+                    <li><button type="button" onclick="ep.value +='5'">5</button></li>
+                    <li><button type="button" onclick="ep.value +='6'">6</button></li>
+                    <li><button type="button" onclick="ep.value +='-'">-</button></li>
+                </ul>
             </div>
-            <img src="ur.png">
-        </div>
-    </section>
-    <section class="co">
-        <div class="codi">
-            <h2 style="padding-top: 19px; text-align: center; position: relative; top: 0px; font-size: 31px;">Subscribe to get more knowledge</h2>
-            <button style=" width: 200px; font-size: 19px; 
-            height:29px ;margin-left: 600px; position: relative; top:50px;font-weight: bold;
-            background-color: rgb(221, 178, 58); border: none; border-radius: 16px; ">Subscribe</button>
-            <form>
-                <label>Email</label>
-                <input/>
-                <label>Username</label>
-                <input/>
-            </form>
-            <div class="coab">
-                <p style="font-size: 30px; font-weight: bold;">About</p>
-                <p>Menu</p>
-                <br>
-                <p>Supports</p>
-                <br>
-                <p>Features</p>
-                <br>
-                <p>News and Blogs</p>
+            <div class="fourth">
+                <ul>
+                    <li><button type="button" onclick="ep.value +='1'">1</button></li>
+                    <li><button type="button" onclick="ep.value +='2'">2</button></li>
+                    <li><button type="button" onclick="ep.value +='3'">3</button></li>
+                    <li><button type="button" onclick="ep.value +='+'">+</button></li>
+                </ul>
             </div>
-            <div class="coan">
-                <p style="font-size: 30px; font-weight: bold;">Company</p>
-                <p>Menu</p>
-                <br>
-                <p>Supports</p>
-                <br>
-                <p>Features</p>
-                <br>
-                <p>News and Blogs</p>
-            </div>
-            <div class="media-icon">
-                <i class='bx bxl-facebook'></i>
-                <a href="#"><i class='bx bxl-linkedin' ></i></a>
-                <a href="#"><i class='bx bxl-instagram' ></i></a>
-                <a href="#"><i class='bx bxl-twitter' ></i></a>
+            <div class="bottom_buttons">
+                <ul>
+                    <li><button type="button" onclick="ep.value+='0'">0</button></li>
+                    <li><button type="button" onclick="ep.value+='00'">00</button></li>
+                    <li><button type="button" onclick="ep.value +='.'">.</button></li>
+                    <li><button type="button" onclick="el()">=</button></li>
+                </ul>
             </div>
         </div>
     </section>
